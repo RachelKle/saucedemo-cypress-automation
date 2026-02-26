@@ -10,7 +10,7 @@ This is a comprehensive Cypress automation framework for testing the **SauceDemo
 - **Fixture Files** - Test Data Management
 
 ## 📁 Project Structure
-\\\
+`
 cypress/
 ├── e2e/                           # Test Suites
 │   ├── login.cy.js               # Login test scenarios
@@ -28,7 +28,7 @@ cypress/
 └── support/                       # Custom Commands & Setup
     ├── commands.js               # Custom Cypress commands
     └── e2e.js                    # Global test setup
-\\\
+`
 
 ## ✅ Test Coverage
 ### Login Tests
@@ -51,61 +51,61 @@ cypress/
 - npm or yarn
 
 ### Install Dependencies
-\\\ash
+`ash
 npm install
-\\\
+`
 
 ## 🏃 Running Tests
 
 ### Open Cypress Test Runner
-\\\ash
+`ash
 npm run cypress:open
-\\\
+`
 
 ### Run Tests in Headless Mode
-\\\ash
+`ash
 npm run cypress:run
-\\\
+`
 
 ### Run Specific Test File
-\\\ash
+`ash
 npx cypress run --spec "cypress/e2e/login.cy.js"
-\\\
+`
 
 ### Run Tests with Chrome Browser
-\\\ash
+`ash
 npx cypress run --browser chrome
-\\\
+`
 
 ## 📦 Custom Commands
 
 ### Login Command
-\\\javascript
+`javascript
 cy.login('standard_user', 'secret_sauce');
-\\\
+`
 
 ### Add to Cart Command
-\\\javascript
+`javascript
 cy.addToCart(0); // Add first item to cart
-\\\
+`
 
 ### Go to Cart Command
-\\\javascript
+`javascript
 cy.goToCart();
-\\\
+`
 
 ### Verify Error Command
-\\\javascript
+`javascript
 cy.verifyError('Epic sadface');
-\\\
+`
 
 ## 👤 Test User Credentials
-From \cypress/fixtures/users.json\:
+From cypress/fixtures/users.json:
 - **Username:** standard_user
 - **Password:** secret_sauce
 
 ## 📊 Test Data Structure
-\\\json
+`json
 {
   "validUsers": [...],
   "invalidUsers": [...],
@@ -115,10 +115,10 @@ From \cypress/fixtures/users.json\:
     "postalCode": "12345"
   }
 }
-\\\
+`
 
 ## 🔧 Configuration
-See \cypress.config.js\ for:
+See cypress.config.js for:
 - Base URL configuration
 - Viewport settings
 - Timeout configurations
@@ -131,7 +131,7 @@ Each page object class contains:
 - **Assertions** - Methods for verification
 
 ### Example (LoginPage.js)
-\\\javascript
+`javascript
 export class LoginPage {
   usernameInput = '[data-test="username"]';
   
@@ -140,7 +140,7 @@ export class LoginPage {
     return this;
   }
 }
-\\\
+`
 
 ## 📝 Best Practices Implemented
 - ✓ Page Object Model for reusability
@@ -151,13 +151,13 @@ export class LoginPage {
 - ✓ Proper wait strategies
 
 ## 🐛 Debugging Tips
-\\\ash
+`ash
 # Run with debug mode
 DEBUG=cypress:* npm run cypress:run
 
 # Run with verbose logging
 npm run cypress:run --log-level verbose
-\\\
+`
 
 ## 📚 Resources
 - [Cypress Documentation](https://docs.cypress.io)
@@ -165,7 +165,7 @@ npm run cypress:run --log-level verbose
 - [Page Object Model Pattern](https://docs.cypress.io/guides/references/best-practices)
 
 ## 👨‍💼 Author
-**Rachel Klein** - Automation QA Engineer
+**Raquel Klepache** - Automation QA Engineer
 
 ## 📄 License
 MIT
