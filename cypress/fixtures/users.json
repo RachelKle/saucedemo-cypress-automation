@@ -1,0 +1,34 @@
+﻿{
+  "validUsers": [
+    {
+      "username": "standard_user",
+      "password": "secret_sauce",
+      "name": "Standard User"
+    },
+    {
+      "username": "locked_out_user",
+      "password": "secret_sauce",
+      "name": "Locked Out User"
+    },
+    {
+      "username": "problem_user",
+      "password": "secret_sauce",
+      "name": "Problem User"
+    }
+  ],
+  "invalidUsers": [
+    {
+      "username": "invalid_user",
+      "password": "wrong_password"
+    },
+    {
+      "username": "",
+      "password": ""
+    }
+  ],
+  "testData": {
+    "firstName": "Rachel",
+    "lastName": "Klein",
+    "postalCode": "12345"
+  }
+}
